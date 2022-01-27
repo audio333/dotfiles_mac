@@ -13,7 +13,7 @@ find_alt() { for i;do which "$i" >/dev/null && { echo "$i"; return 0;};done;retu
 # the first program in the array that is detected on your system will be chosen as the default
 #export BROWSER=$(find_alt chromium chromium-browser qutebrowser google-chrome firefox $OPENER )
 export EDITOR=$(find_alt vim vi emacs nano leafpad gedit pluma $OPENER )
-export EDITORGUI=$(find_alt subl code gedit $OPENER )
+#export EDITORGUI=$(find_alt subl code gedit $OPENER )
 #export PLAYER=$(find_alt mpv mplayer ffplay cvlc $OPENER )
 #export READER=$(find_alt mupdf zathura evince $OPENER )
 #export IMAGEVIEWER=$(find_alt sxiv feh ristretto display eog $OPENER )
@@ -39,6 +39,8 @@ cfg-ranger-rifle() { $EDITOR ~/.config/ranger/rifle.conf ;}
 cfg-ranger-commands() { $EDITOR ~/.config/ranger/commands.py ;}
 cfg-tmuxrc() { $EDITOR ~/.tmux.conf ;}
 cfg-torrentflix() { torrentflix --config=$EDITOR ;}
+cfg-skhdrc() { $EDITOR ~/.skhdrc ;}
+cfg-yabairc() { $EDITOR ~/.yabairc ;}
 cfg-vimrc() { $EDITOR ~/.vimrc ;}
 cfg-zshrc() { $EDITOR ~/.zshrc ;}
 #}}}
@@ -47,6 +49,9 @@ cfg-zshrc() { $EDITOR ~/.zshrc ;}
 #------------------------------------------------------
 rld-bashrc() { source ~/.bashrc ;}
 rld-zshrc() { source ~/.zshrc ;}
+rld-yabairc() { launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai" ;}
+rld-yabai() { brew services restart yabai ;}
+rld-skhd() { brew services restart skhd ;}
 # }}}
 
 #-------- Alias (Substitution) {{{
@@ -145,8 +150,8 @@ fi
 #-------- Function Informations {{{
 #------------------------------------------------------
 
-function    osr              { shutdown -r now; }
-function    osh              { shutdown -h now; }
+function    osr              { sudo shutdown -r now; }
+function    osh              { sudo shutdown -h now; }
 
 
 ############################
@@ -178,6 +183,7 @@ alias vu="cd ~/projects/Homestead && vagrant up"
 
 
 # }}}
+
 
 # Simple Server for file sharing
 #alias myserver="python2 -m SimpleHTTPServer 8080" 

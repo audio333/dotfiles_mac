@@ -1,0 +1,43 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AceJump",
+		"AdvancedNewFile",
+		"Blade Snippets",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"DocBlockr",
+		"Emmet",
+		"Gist",
+		"GitGutter",
+		"Horizontal Scroll",
+		"Laravel Blade Highlighter",
+		"NeoVintageous",
+		"Nettuts+ Fetch",
+		"Origami",
+		"Package Control",
+		"PHP Companion",
+		"PlainTasks",
+		"Pug",
+		"Sass",
+		"SASS Build",
+		"SideBarEnhancements",
+		"SnippetMaker",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeXiki",
+		"Syntax Highlighting for Sass",
+		"Terminus",
+		"Theme - Cobalt2",
+		"ToggleNeoVintageous",
+		"Twig",
+		"Vue Syntax Highlight",
+		"WordPress",
+		"WordPress Completions",
+		"WordPress Snippets"
+	],
+}

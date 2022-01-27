@@ -1,0 +1,33 @@
+let mapleader=,
+
+nnoremap <leader>d :Neovintageous action=toggle_side_bar<CR>
+nnoremap <leader>en :Neovintageous action=open_rc_file<CR>
+nnoremap <leader>f :ShowOverlay overlay=goto text=@<CR>
+"nnoremap <leader>hu :RevertModification<CR>
+"nnoremap <leader>q gqip:w<CR>
+"nnoremap <leader>r :reg<CR>
+
+" nnoremap <C-r> :ShowOverlay overlay=goto text=@<CR>
+noremap <C-l> :nohlsearch<CR>
+noremap <C-s> :w<CR>
+
+" Yank and paste using system clipboard.
+noremap <leader>y "+y
+noremap <leader>Y "+Y
+noremap <leader>p "+p
+noremap <leader>P "+P
+
+"nnoremap <D-i> :GotoSymbolInProject<CR>
+
+"nnoremap <leader>s) vi):sort u<CR>
+"nnoremap <leader>s] vi]:sort u<CR>
+"nnoremap <leader>si vii:sort u<CR>
+"nnoremap <leader>sp vip:sort u<CR>
+"nnoremap <leader>ss vip:sort u<CR>
+"vnoremap <leader>s :sort u<CR>
+
+"nnoremap <leader><bar> <C-w><bar>
+"nnoremap <leader>= <C-w>=
+"nnoremap <leader>_ <C-w>_
+
+set winaltkeys=yes
